@@ -1,9 +1,10 @@
-console.log("msgRoutes.js criando as rotas");
+console.log("msgRoutes.js CRIANDO AS ROTAS");
 
 'use strict';
 
 module.exports = function (app) {
 
+    console.log("msgRoutes.js INICIANDO CONTROLLER");
     var messages = require('../controllers/msgController');
 
     app.route('/messages')

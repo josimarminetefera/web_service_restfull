@@ -1,6 +1,10 @@
 'use strict';
+console.log("msgModel.js INICIANDO");
+
 var mongoose = require('mongoose');
+
 var Schema = mongoose.Schema;
+
 var msgSchema = new Schema({
     title: {
         type: String
@@ -13,4 +17,5 @@ var msgSchema = new Schema({
         default: Date.now
     }
 });
+
 module.exports = mongoose.model('Messages', msgSchema);
